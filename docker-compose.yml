@@ -1,0 +1,8 @@
+version: '3'
+services:
+  python:
+    build: .
+    volumes:
+      - .:/scripts
+    tty: true
+    stdin_open: true
