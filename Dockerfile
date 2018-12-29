@@ -23,10 +23,9 @@ RUN apt install -y software-properties-common vim
 RUN apt update
 
 RUN pip install pipenv
-# For include .venv/ in project
-ENV  PIPENV_VENV_IN_PROJECT 1
 
 ENV APP_HOME /scripts
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 ADD . $APP_HOME
+RUN pipenv install

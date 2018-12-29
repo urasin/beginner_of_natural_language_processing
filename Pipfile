@@ -13,4 +13,3 @@ numpy = "*"
 pandas = "*"
 mecab-python3 = "*"
 ipython = "*"
-
